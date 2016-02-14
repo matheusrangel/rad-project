@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'bootstrap-sass',  '3.2.0.0'
 gem 'font-awesome-rails'
 gem 'will_paginate-bootstrap'
+gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
