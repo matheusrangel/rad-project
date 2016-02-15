@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   post   'login'       => 'sessions#create'
   delete 'logout'      => 'sessions#destroy'
   get    'signup'      => 'users#new'
+  get    'home'        => 'static_pages#home'  
 
   resources :users
   resources :contacts
-  
+
 end
