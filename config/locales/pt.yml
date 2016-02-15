@@ -1,0 +1,52 @@
+pt:
+
+  actions:
+    actions_title: 'Ações'
+    new: 'Novo(a)'
+    show: 'Mostrar'
+    edit: 'Editar'
+    delete: 'Remover'
+    deactivate: 'Desativar'
+    activate: 'Ativar'
+    save: 'Salvar'
+    cancel: 'Cancelar'
+    back: 'Voltar'
+    login: 'Entrar'
+    logout: 'Sair'
+    yes_option: 'Sim'
+    no_option: 'Não'
+
+  will_paginate:
+     previous_label: "&#8592; Anterior"
+     next_label: "Próximo &#8594;"
+     page_gap: "&hellip;"
+
+  # ActiveRecord Models
+  activerecord:
+    models:
+      user:
+        title: 'Usuarios'
+        one: 'Usuario'
+        other: 'Usuarios'
+      contact:
+        title: 'Contatos'
+        one:   'Contato'
+        other: 'Contatos'
+    
+    attributes:
+      user:
+        name:                'Nome'
+        email:               'Email'
+        phone:               'Telefone'
+        password:            'Senha'
+      contact:
+        name:                'Nome'
+        email:               'Email'
+        phone:               'Telefone'
+        address:             'Endereço'
+
+    helpers:
+      submit:
+        create: Criar %{model}
+        submit: Salvar %{model}
+        update: Atualizar %{model}

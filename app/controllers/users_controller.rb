@@ -12,13 +12,12 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 		if @user.save
-			login_in @user
+			log_in @user
 			redirect_to @user, flash: { success: 'Cadastro efetuado com sucesso!' }
 		else
 			render 'new'
 		end
 	end
-
 
 	private
 

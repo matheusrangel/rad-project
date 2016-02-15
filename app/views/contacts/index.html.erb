@@ -1,0 +1,41 @@
+<% provide(:title, 'Contatos') %>
+<h2>Contatos</h2>
+
+
+<%= link_to 'Novo', new_contact_path, class: 'btn btn-default' %>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+        <th>Endereço</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% @contacts.each do |contact| %>
+        <tr>
+          <td><%= contact.nome %></td>
+          <td><%= contact.phone %></td>
+          <td><%= contact.email %></td>
+          <td><%= contact.address %></td>
+  
+          <td class="last">
+            <%= link_to(edit_contact_path(contact), class: "btn btn-warning") do %>
+              <i class="fa fa-edit"></i> Editar
+            <% end %>
+            <%= link_to(contact_path(contact), class: "btn btn-danger",  method: :delete, data: { confirm: 'Tem certeza que deseja apagar?' }) do %>
+              <i class="fa fa-remove"></i> Remover
+            <% end %>
+          </td>  
+        </tr> 
+      <% end %> 
+    </tbody>
+  </table>
+  
+</div>
+<div>
+  <%= will_paginate @contacts, renderer: BootstrapPagination::Rails %>
+</div>
