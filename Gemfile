@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.4'
 
-gem 'pg'
+group :development, :test do
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+end
 
 gem 'sass-rails', '~> 5.0'
 
