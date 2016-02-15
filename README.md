@@ -24,4 +24,4 @@ Github:
 
 Heroku:
 
-* 
+* https://rad-project.herokuapp.com

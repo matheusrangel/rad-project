@@ -2,13 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.4'
 
+group :development, :test do
+  gem 'sqlite3'
+end
 group :production do
-  gem "pg"
+  gem 'pg'
 end
 
-group :development, :test do
-  gem "sqlite3"
-end
+gem 'puma'
 
 gem 'sass-rails', '~> 5.0'
 
