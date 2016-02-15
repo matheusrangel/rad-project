@@ -4,6 +4,7 @@ class ContactsController < ApplicationController
 
 	def index
 		@contacts = current_user.contacts.paginate(:page => params[:page], :per_page => 6)
+		#@contacts = Contact.joao.paginate(:page => params[:page], :per_page => 6)
 	end
 
 	def new
