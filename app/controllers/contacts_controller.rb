@@ -3,7 +3,12 @@ class ContactsController < ApplicationController
 	before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@contacts = current_user.contacts.paginate(:page => params[:page], :per_page => 6)
+		@contacts = current_user.contacts
+		respond_to do |format|
+			format.html { render :index => @contacts = @contacts.paginate(:page => params[:page], :per_page => 6) }
+			format.xml { render :xml => @contacts.to_xml }
+			format.json { render :json => @contacts.to_json }
+		end
 	end
 
 	def new
