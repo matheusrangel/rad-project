@@ -13,28 +13,28 @@
         <th>Endereço</th>
       </tr>
     </thead>
-  
+
     <tbody>
       <% @contacts.each do |contact| %>
         <tr>
           <td><%= contact.nome %></td>
           <td><%= contact.phone %></td>
           <td><%= contact.email %></td>
-          <td><%= contact.address %></td>
-  
+          <td><%= contact.address.length > 80 ? contact.address[0, 80].concat('...') : contact.address %></td>
+
           <td class="last">
             <%= link_to(edit_contact_path(contact), class: "btn btn-warning") do %>
               <i class="fa fa-edit"></i> Editar
             <% end %>
-            <%= link_to(contact_path(contact), class: "btn btn-danger",  method: :delete, data: { confirm: 'Tem certeza que deseja apagar?' }) do %>
+            <%= link_to(contact_path(contact), class: "btn btn-danger contact-delete", method: :delete, remote: true, data: { confirm: 'Tem certeza que deseja apagar?' }) do %>
               <i class="fa fa-remove"></i> Remover
             <% end %>
-          </td>  
-        </tr> 
-      <% end %> 
+          </td>
+        </tr>
+      <% end %>
     </tbody>
   </table>
-  
+
 </div>
 <div>
   <%= will_paginate @contacts, renderer: BootstrapPagination::Rails %>

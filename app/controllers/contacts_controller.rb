@@ -34,7 +34,11 @@ class ContactsController < ApplicationController
 
 	def destroy
   	@contact.destroy
-    redirect_to contacts_path, flash: { success: 'Contato removido com sucesso!' }
+		respond_to do |format|
+			format.html { redirect_to contacts_path, flash: { success: 'Contato removido com sucesso!' } }
+			format.js { flash.now[:notice] = 'Contato removido com sucesso!' }
+		end
+
   end
 
 	 # Confirms a logged-in user.

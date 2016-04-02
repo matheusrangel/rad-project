@@ -1,0 +1,4 @@
+$('.contact-delete').on('ajax:success', function(){
+  $(".alert-success").html("<%=j flash[:notice] %>").show();
+  $(this).closest('tr').fadeOut();
+});
