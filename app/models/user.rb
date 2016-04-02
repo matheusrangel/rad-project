@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+	extend FriendlyId
+	friendly_id :name, use: :slugged
+
 	has_many :contacts
 
 	validates :name, presence: true, length: { minimum: 5, maximum: 40}

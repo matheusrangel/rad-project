@@ -15,6 +15,7 @@ gem 'font-awesome-rails'
 gem 'will_paginate-bootstrap'
 gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 gem 'execjs'
+gem 'friendly_id', '~> 5.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

@@ -11,6 +11,9 @@ class ContactsController < ApplicationController
 		end
 	end
 
+	def show
+	end
+
 	def new
 		@contact = current_user.contacts.build
 	end
@@ -50,7 +53,7 @@ class ContactsController < ApplicationController
 
 	private
 		def set_contact
-      @contact = current_user.contacts.find(params[:id])
+      @contact = current_user.contacts.friendly.find(params[:id])
     end
 
 		# Never trust parameters from the scary internet, only allow the white list through.
