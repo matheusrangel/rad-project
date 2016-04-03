@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Olá <%= @user.name %>, seja Bem-Vindo!</h1>
+    <p>
+      Sua conta foi criada com sucesso!
+    </p>
+    Seus dados:
+    <ul>
+      <li><b>Nome:</b> <%= @user.name %></li>
+      <li><b>Email:</b> <%= @user.email %></li>
+      <li><b>Telefone:</b> <%= @user.phone %></li>
+    </ul>
+  </body>
+</html>
