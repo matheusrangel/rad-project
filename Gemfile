@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.4'
 
-gem 'sqlite3'
+gem 'pg', '~> 0.18.4'
 
 gem 'sass-rails', '~> 5.0'
 
@@ -34,13 +34,17 @@ group :development, :test do
   gem 'pry-rails'
 end
 
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0'
+end
+
 group :test do
   gem 'minitest-reporters', '1.0.5'
 end
 
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+group :production do
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
