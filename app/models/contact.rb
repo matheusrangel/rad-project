@@ -1,6 +1,7 @@
 class Contact < ActiveRecord::Base
   extend FriendlyId
   friendly_id :slug_candidates, use: :slugged
+  acts_as_paranoid
 
   def slug_candidates
     [

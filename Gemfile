@@ -17,6 +17,7 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 gem 'execjs'
 gem 'friendly_id', '~> 5.1'
 gem 'rails-i18n', '~> 4.0.0'
+gem "paranoia", "~> 2.0"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
