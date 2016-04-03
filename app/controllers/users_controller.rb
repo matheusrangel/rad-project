@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 		@user = User.new(user_params)
 		if @user.save
 			log_in @user
+			UserMailer.new_user(@user).deliver_now
 			redirect_to @user, flash: { success: 'Cadastro efetuado com sucesso!' }
 		else
 			render 'new'

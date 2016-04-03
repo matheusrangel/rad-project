@@ -1,6 +1,14 @@
 class Contact < ActiveRecord::Base
   extend FriendlyId
-  friendly_id :nome, use: :slugged
+  friendly_id :slug_candidates, use: :slugged
+
+  def slug_candidates
+    [
+      :nome,
+      [:nome, :phone],
+      [:nome, :phone, :address]
+    ]
+  end
 
   belongs_to :user
 
