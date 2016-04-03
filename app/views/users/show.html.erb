@@ -2,9 +2,9 @@
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
-    	<p><b>Nome: </b><%= @user.name %></p>
-      <p><b>Email: </b><%= @user.email %></p>
-      <p><b>Telefone: </b><%= @user.phone %></p>
+    	<p><b><%= t('activerecord.attributes.user.name') %>: </b><%= @user.name %></p>
+      <p><b><%= t('activerecord.attributes.user.email') %>: </b><%= @user.email %></p>
+      <p><b><%= t('activerecord.attributes.user.phone') %>: </b><%= @user.phone %></p>
     </section>
   </aside>
 </div>

@@ -3,19 +3,19 @@
     <%= form_for(@contact) do |f| %>
     	<%= render 'shared/error_messages', object: f.object %>
 
-      <%= f.label :nome, "Nome" %>
+      <%= f.label :nome %>
       <%= f.text_field :nome, class: 'form-control' %>
 
-      <%= f.label :email, 'Email' %>
+      <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
 
-      <%= f.label :phone, "Telefone" %>
+      <%= f.label :phone %>
       <%= f.telephone_field :phone, class: 'form-control' %>
 
-      <%= f.label :address, 'Endereço' %>
+      <%= f.label :address %>
       <%= f.text_field :address, class: 'form-control' %>
 
-      <%= f.submit nil, class: "btn btn-primary" %>
+      <%= f.submit t('actions.save'), class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>

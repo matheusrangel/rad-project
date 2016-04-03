@@ -20,4 +20,65 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+
+  actions:
+    actions_title: 'Actions'
+    new: 'New'
+    show: 'Show'
+    edit: 'Edit'
+    delete: 'Delete'
+    deactivate: 'Deactivate'
+    activate: 'Activate'
+    save: 'Save'
+    cancel: 'Cancel'
+    back: 'Back'
+    login: 'Login'
+    logout: 'Logout'
+    yes_option: 'Yes'
+    no_option: 'No'
+
+    header:
+      home: 'Home'
+      contacts: 'Contacts'
+      account: 'Account'
+      profile: 'Profile'
+
+    others:
+      new_user: 'New User?'
+      new_contact: 'New Contact'
+      update_contact: 'Update Contact'
+
+  will_paginate:
+     previous_label: "&#8592; Previous"
+     next_label: "Next &#8594;"
+     page_gap: "&hellip;"
+
+  # ActiveRecord Models
+  activerecord:
+    models:
+      user:
+        title: 'Users'
+        one: 'User'
+        other: 'Users'
+      contact:
+        title: 'Contacts'
+        one:   'Contact'
+        other: 'Contacts'
+
+    attributes:
+      user:
+        name:                'Name'
+        email:               'Email'
+        phone:               'Phone'
+        password:            'Password'
+      contact:
+        nome:                'Name'
+        email:               'Email'
+        phone:               'Phone'
+        address:             'Address'
+
+    helpers:
+      submit:
+        create: Create %{model}
+        submit: Save %{model}
+        update: Update %{model}

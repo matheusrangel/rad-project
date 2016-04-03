@@ -1,16 +1,16 @@
 <% provide(:title, 'Contatos') %>
-<h2>Contatos</h2>
+<h2><%= t('activerecord.models.contact.title') %></h2>
 
 
-<%= link_to 'Novo', new_contact_path, class: 'btn btn-default' %>
+<%= link_to t('actions.new'), new_contact_path, class: 'btn btn-default' %>
 <div class="table-responsive">
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>Nome</th>
-        <th>Telefone</th>
-        <th>Email</th>
-        <th>Endereço</th>
+        <th><%= t('activerecord.attributes.contact.nome') %></th>
+        <th><%= t('activerecord.attributes.contact.phone') %></th>
+        <th><%= t('activerecord.attributes.contact.email') %></th>
+        <th><%= t('activerecord.attributes.contact.address') %></th>
       </tr>
     </thead>
 
@@ -24,10 +24,10 @@
 
           <td class="last">
             <%= link_to(edit_contact_path(contact), class: "btn btn-warning") do %>
-              <i class="fa fa-edit"></i> Editar
+              <i class="fa fa-edit"></i> <%= t('actions.edit') %>
             <% end %>
             <%= link_to(contact_path(contact), class: "btn btn-danger contact-delete", method: :delete, remote: true, data: { confirm: 'Tem certeza que deseja apagar?' }) do %>
-              <i class="fa fa-remove"></i> Remover
+              <i class="fa fa-remove"></i> <%= t('actions.delete') %>
             <% end %>
           </td>
         </tr>

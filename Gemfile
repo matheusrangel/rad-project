@@ -16,6 +16,7 @@ gem 'will_paginate-bootstrap'
 gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 gem 'execjs'
 gem 'friendly_id', '~> 5.1'
+gem 'rails-i18n', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -34,6 +35,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'pry-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

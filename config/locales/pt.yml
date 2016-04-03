@@ -2,7 +2,7 @@ pt:
 
   actions:
     actions_title: 'Ações'
-    new: 'Novo(a)'
+    new: 'Novo'
     show: 'Mostrar'
     edit: 'Editar'
     delete: 'Remover'
@@ -13,8 +13,20 @@ pt:
     back: 'Voltar'
     login: 'Entrar'
     logout: 'Sair'
+    signup: 'Cadastro'
     yes_option: 'Sim'
     no_option: 'Não'
+
+  header:
+    home: 'Home'
+    contacts: 'Contatos'
+    account: 'Conta'
+    profile: 'Perfil'
+
+  others:
+    new_user: 'Novo Usuário?'
+    new_contact: 'Novo Contato'
+    update_contact: 'Alterar Contato'
 
   will_paginate:
      previous_label: "&#8592; Anterior"
@@ -32,15 +44,16 @@ pt:
         title: 'Contatos'
         one:   'Contato'
         other: 'Contatos'
-    
+
     attributes:
       user:
         name:                'Nome'
         email:               'Email'
         phone:               'Telefone'
         password:            'Senha'
+        password_confirmation:  'Confirmação de Senha'
       contact:
-        name:                'Nome'
+        nome:                'Nome'
         email:               'Email'
         phone:               'Telefone'
         address:             'Endereço'
