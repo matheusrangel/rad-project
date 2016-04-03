@@ -1,5 +1,8 @@
 language: ruby
 rvm:
   - 2.3.0
+services:
+  - postgresql
 before_script:
   - "bundle exec rake db:migrate RAILS_ENV=test"
+  - psql -c 'create database contact_list_test;' -U postgres
