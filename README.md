@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/matheusrangel/rad-project.svg?branch=master)](https://travis-ci.org/matheusrangel/rad-project)
+
 # Lista de Contatos
 
 ## Equipe:
@@ -20,4 +22,5 @@
 
 ## Heroku:
 
-* http://rad-contact-list.herokuapp.com/ https://travis-ci.org/matheusrangel/rad-project.svg?branch=master
+* http://rad-contact-list.herokuapp.com/ 
+
