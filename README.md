@@ -2,8 +2,8 @@
 
 ## Equipe:
 
-* Matheus Rangel
-* Victor Pereira
+* Matheus Rangel0286 - 20102370286 - matheusulysses159@gmail.com
+* Victor Pereira - 20131370442 - victordualib@gmail.com
 
 ## Funcionalidades:
 
@@ -20,4 +20,4 @@
 
 ## Heroku:
 
-* http://rad-contact-list.herokuapp.com/
+* http://rad-contact-list.herokuapp.com/ https://travis-ci.org/matheusrangel/rad-project.svg?branch=master
